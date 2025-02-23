@@ -1,27 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --lightBeige: #FFFCF2;
+  --beige: #F6EFDD;
+  --lightGreen: #898C76;
+  --darkGreen: #3B3D33;
+  --veryDarkGreen: #1A1B16;
+  --redPink: #7E023C;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--veryDarkGreen);
+  background: var(--lightBeige);
+  font-family: "Raleway", serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+nav a {
+  @apply font-medium hover:underline transition-all;
 }
