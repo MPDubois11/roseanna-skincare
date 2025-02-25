@@ -25,6 +25,10 @@ body {
   }
 }
 
-nav a {
-  @apply font-medium hover:underline transition-all;
+a {
+  @apply font-medium hover:underline underline-offset-4 transition-all;
+}
+
+p a {
+  @apply text-redPink hover:text-lightGreen underline font-bold;
 }
